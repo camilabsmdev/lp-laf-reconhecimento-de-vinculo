@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- [GTM-HEAD-TRACKING] - Insira o código principal do Google Tag Manager (head) abaixo -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+  <!-- [GTM-HEAD-TRACKING] - Fim do código GTM (head) -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trabalhou sem registro, como PJ, MEI ou autônomo? Entenda quando a Justiça do Trabalho reconhece o vínculo de emprego. Análise do seu caso com advogado.">
+  <meta name="robots" content="index, follow">
+  
+  <title>Reconhecimento de Vínculo Empregatício | Advogado Trabalhista</title>
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- Google Fonts: Playfair Display, Inter & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & CSS VARIABLES
+       ========================================================================= */
+    :root {
+      /* Palette */
+      --primary: #0A1D37;        /* Deep Blue / Navy (Boutique, Trust) */
+      --primary-dark: #051326;   /* Richer dark navy for cards and footers */
+      --primary-light: #162C4E;  /* Lighter navy for subtle gradients/hovers */
+      --secondary: #C0C0C0;      /* Silver / Muted Slate */
+      --accent: #B89047;         /* Warm Editorial Bronze/Gold (Accents only) */
+      --accent-hover: #A47D37;   /* Slightly darker bronze for hover */
+      --accent-light: #F4EAD4;   /* Very light soft bronze background */
+      --bg-light: #FAFAFA;       /* Off-white / Cream */
+      --bg-white: #FFFFFF;       /* Pure white for cards */
+      --text-dark: #111111;      /* Charcoal text for light sections */
+      --text-muted: #4A5568;     /* Soft text for readability */
+      --text-light: #FFFFFF;     /* Light text for dark sections */
+      --text-light-muted: #B3C0D1;/* Muted blue-grey for dark section subtext */
+      --border-color: #E2E8F0;   /* Clean thin borders */
+      --border-dark: #1E3553;    /* Borders inside navy sections */
+      
+      /* Typography */
+      --font-title: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-alt: 'Montserrat', sans-serif;
+      
+      /* Transitions & Shadows */
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-premium: 0 20px 40px rgba(10, 29, 55, 0.04);
+      --shadow-hover: 0 30px 60px rgba(10, 29, 55, 0.08);
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-title);
+      font-weight: 600;
+      color: inherit;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input {
+      font-family: inherit;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* Section Utilities */
+    section {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 48px 0;
+      }
+    }
+
+    .section-dark {
+      background-color: var(--primary);
+      color: var(--text-light);
+    }
+
+    .section-light {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    .section-white {
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+    }
+
+    /* Badges & Accent Lines */
+    .section-badge {
+      font-family: var(--font-alt);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+      display: block;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 4.5vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 20px;
+      max-width: 900px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .section-dark .section-title {
+      color: var(--text-light);
+    }
+
+    .section-subtitle {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text-muted);
+      max-width: 800px;
+      margin-bottom: 60px;
+      font-weight: 400;
+      line-height: 1.7;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-dark .section-subtitle {
+      color: var(--text-light-muted);
+    }
+
+    /* Divider Lines */
+    .divider-fine {
+      width: 60px;
+      height: 1px;
+      background-color: var(--accent);
+      margin: 0 auto 24px auto;
+    }
+
+    /* ==========================================================================
+       CTA BUTTONS & EFFECTS
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px 36px;
+      border-radius: 4px;
+      font-family: var(--font-alt);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Button Shiner Sweep Effect */
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--text-light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: skewX(-25deg);
+      transition: none;
+    }
+
+    .btn-primary:hover::before {
+      animation: shiner 1.2s ease-in-out;
+    }
+
+    @keyframes shiner {
+      0% { left: -150%; }
+      100% { left: 150%; }
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(184, 144, 71, 0.4);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-dark);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--border-color);
+      transform: translateY(-2px);
+    }
+
+    .section-dark .btn-secondary {
+      border-color: var(--border-dark);
+      color: var(--text-light);
+    }
+
+    .section-dark .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+    }
+
+    .whatsapp-floating svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    .whatsapp-floating:hover {
+      transform: scale(1.1) translateY(-5px);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Pulse wave animation for floating button */
+    .whatsapp-floating::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid #25D366;
+      left: 0;
+      top: 0;
+      opacity: 0.8;
+      animation: pulse-wave 2s infinite ease-out;
+      z-index: -1;
+    }
+
+    @keyframes pulse-wave {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1.6);
+        opacity: 0;
+      }
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background: transparent;
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      position: fixed;
+      background: rgba(10, 29, 55, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 14px 0;
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-symbol-img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 2px;
+    }
+
+    .logo-text {
+      font-family: var(--font-title);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-light);
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-family: var(--font-body);
+      letter-spacing: 2px;
+      color: var(--secondary);
+      margin-top: 4px;
+    }
+
+    .header-btn {
+      font-size: 11px;
+      padding: 10px 20px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      color: var(--text-light);
+      font-family: var(--font-alt);
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .header-btn:hover {
+      background-color: var(--accent);
+      color: var(--text-light);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       DOBRA 1: HERO SECTION
+       ========================================================================== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      background-image: radial-gradient(circle at 80% 20%, #102543 0%, var(--primary) 70%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Elegant background lines */
+    .hero-lines-art {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      border: 1px solid rgba(192, 192, 192, 0.03);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-lines-art::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      border: 1px dashed rgba(184, 144, 71, 0.06);
+      border-radius: 50%;
+      top: 10%;
+      left: 10%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: clamp(36px, 5.5vw, 54px);
+      line-height: 1.15;
+      margin-bottom: 24px;
+      color: var(--text-light);
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2.2vw, 20px);
+      font-weight: 300;
+      color: #E2E8F0;
+      margin-bottom: 40px;
+      max-width: 780px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .hero-microcopy {
+      font-size: 13px;
+      color: var(--text-light-muted);
+      margin-top: 16px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+    /* ==========================================================================
+       DOBRA 2: SITUAÇÕES (GRID DE 6 CARDS)
+       ========================================================================== */
+    .situacoes {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .situacoes-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 576px) {
+      .situacoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .situacoes-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .situacao-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-left: 3px solid transparent;
+      padding: 36px 30px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      position: relative;
+      box-shadow: var(--shadow-premium);
+      border-radius: 4px;
+    }
+
+    .situacao-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-left-color: var(--accent);
+    }
+
+    .situacao-icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 24px;
+      background-color: rgba(184, 144, 71, 0.08);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .situacao-card:hover .situacao-icon {
+      background-color: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .situacao-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.75;
+    }
+
+    .situacao-pill {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border: 1px solid rgba(184, 144, 71, 0.3);
+      background-color: rgba(184, 144, 71, 0.05);
+      border-radius: 99px;
+      font-family: var(--font-alt);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .situacao-title {
+      font-family: var(--font-alt);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--primary);
+      line-height: 1.35;
+    }
+
+    .situacao-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 400;
+      flex-grow: 1;
+      line-height: 1.65;
+    }
+
+    .situacoes-cta-wrapper {
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       DOBRA 3: BLOCO ESCURO COM FOTO
+       ========================================================================== */
+    .atuacao {
+      background-image: radial-gradient(circle at 10% 80%, #102543 0%, var(--primary) 70%);
+      overflow: hidden;
+    }
+
+    .atuacao-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .atuacao-img-container {
+      position: relative;
+      margin: 0 auto;
+      max-width: 440px;
+      width: 100%;
+    }
+
+    .atuacao-img-frame {
+      position: relative;
+      border: 1px solid var(--border-dark);
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.02);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .atuacao-img-frame::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border: 1px solid rgba(184, 144, 71, 0.15);
+      pointer-events: none;
+      z-index: -1;
+      transition: var(--transition);
+    }
+
+    .atuacao-img-frame:hover::after {
+      transform: scale(1.02);
+      border-color: var(--accent);
+    }
+
+    .atuacao-img-wrapper {
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .atuacao-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(15%) contrast(1.08);
+      transition: var(--transition);
+    }
+
+    .atuacao-img-frame:hover .atuacao-img {
+      filter: grayscale(0%) contrast(1.02);
+      transform: scale(1.02);
+    }
+
+    .atuacao-img-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -20px;
+      background-color: var(--accent);
+      color: var(--text-light);
+      padding: 12px 24px;
+      font-family: var(--font-title);
+      font-size: 16px;
+      font-weight: 500;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .atuacao-content {
+      z-index: 2;
+    }
+
+    .atuacao-text-p {
+      font-size: 15.5px;
+      color: var(--text-light-muted);
+      margin-bottom: 24px;
+      font-weight: 400;
+      line-height: 1.75;
+      text-align: justify;
+    }
+
+    .atuacao-content .btn {
+      margin-top: 12px;
+    }
+
+    @media (min-width: 992px) {
+      .atuacao-grid {
+        grid-template-columns: 0.95fr 1.05fr;
+      }
+      .atuacao-img-container {
+        margin: 0;
+      }
+    }
+
+    /* ==========================================================================
+       DOBRA 4: OS QUATRO REQUISITOS (BLOCO NUMERADO)
+       ========================================================================== */
+    .requisitos {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .requisitos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .requisitos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .requisitos-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .requisito-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 40px 30px;
+      border-radius: 4px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: var(--shadow-premium);
+    }
+
+    .requisito-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent);
+    }
+
+    .requisito-number {
+      font-family: var(--font-title);
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--accent);
+      opacity: 0.15;
+      line-height: 1;
+      display: block;
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+
+    .requisito-card:hover .requisito-number {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .requisito-title {
+      font-family: var(--font-alt);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .requisito-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       DOBRA 5: PROVAS
+       ========================================================================== */
+    .provas {
+      background-color: var(--bg-light);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .provas-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 768px) {
+      .provas-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .prova-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 40px 30px;
+      border-radius: 4px;
+      box-shadow: var(--shadow-premium);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .prova-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent);
+    }
+
+    .prova-icon-box {
+      width: 44px;
+      height: 44px;
+      background-color: rgba(184, 144, 71, 0.08);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+
+    .prova-card:hover .prova-icon-box {
+      background-color: var(--accent);
+      color: #FFFFFF;
+    }
+
+    .prova-icon-box svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.75;
+    }
+
+    .prova-title {
+      font-family: var(--font-alt);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+
+    .prova-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .provas-alert {
+      background-color: var(--bg-white);
+      border-left: 4px solid var(--accent);
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-premium);
+      border-radius: 0 4px 4px 0;
+      text-align: center;
+    }
+
+    .provas-alert-title {
+      font-family: var(--font-alt);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .provas-alert-title svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .provas-alert-text {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-weight: 400;
+    }
+
+    /* ==========================================================================
+       DOBRA 6: FAIXA DE PRAZO
+       ========================================================================== */
+    .prazo {
+      padding: 70px 0;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-light);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .prazo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      .prazo-wrapper {
+        flex-direction: row;
+        text-align: left;
+        gap: 60px;
+      }
+    }
+
+    .prazo-content {
+      max-width: 780px;
+    }
+
+    .prazo-title-badge {
+      font-family: var(--font-alt);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .prazo-text {
+      font-size: clamp(16px, 2.2vw, 19px);
+      line-height: 1.7;
+      color: var(--text-light);
+      font-weight: 300;
+    }
+
+    .prazo-text strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .prazo-action {
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       DOBRA 7: FAQ
+       ========================================================================== */
+    .faq {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .faq-container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 0;
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid var(--border-color);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 24px 0;
+      cursor: pointer;
+      color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .faq-question {
+      font-family: var(--font-alt);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      padding-right: 24px;
+      letter-spacing: 0.1px;
+    }
+
+    .faq-icon-box {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .faq-icon-box svg {
+      width: 12px;
+      height: 12px;
+      transition: var(--transition);
+      stroke: var(--primary);
+      fill: none;
+      stroke-width: 2.5;
+    }
+
+    /* Accordion Toggle States */
+    .faq-item.active .faq-icon-box {
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .faq-item.active .faq-icon-box svg {
+      transform: rotate(45deg);
+      stroke: var(--text-light);
+    }
+
+    .faq-content {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-answer {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.7;
+      padding-bottom: 24px;
+      text-align: justify;
+    }
+
+    .faq-cta-wrapper {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* ==========================================================================
+       DOBRA 8: CONTATO & MAPS
+       ========================================================================== */
+    .contato {
+      background-image: radial-gradient(circle at 90% 90%, #102543 0%, var(--primary) 70%);
+      padding-bottom: 50px;
+    }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 992px) {
+      .contato-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: stretch;
+      }
+    }
+
+    /* Styled Grayscale map container */
+    .map-wrapper {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      border: 1px solid var(--border-dark);
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.02);
+      border-radius: 2px;
+    }
+
+    @media (min-width: 992px) {
+      .map-wrapper {
+        height: 100%;
+        min-height: 420px;
+      }
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: grayscale(1) invert(0.9) contrast(1.2); /* Custom map style matching midnight theme */
+      opacity: 0.75;
+      transition: var(--transition);
+    }
+
+    .map-wrapper:hover .map-frame {
+      opacity: 0.95;
+      filter: grayscale(0.2) contrast(1.05);
+    }
+
+    .contato-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contato-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    .contato-channel-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .channel-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .contato-channel-item:hover .channel-icon {
+      background-color: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+    }
+
+    .channel-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .channel-details h4 {
+      font-family: var(--font-alt);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-light-muted);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .channel-link {
+      font-size: 15px;
+      color: var(--text-light);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .channel-link:hover {
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      border-top: 1px solid var(--border-dark);
+      padding-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-logo-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-alt);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-light);
+      letter-spacing: 1px;
+    }
+
+    .footer-meta {
+      font-size: 12px;
+      color: var(--text-light-muted);
+      font-weight: 300;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      color: var(--text-light-muted);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE ADJUSTMENTS & BUTTON WRAPPER
+       ========================================================================== */
+    .contato-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .contato-btn-wrapper .btn {
+      width: 100%;
+      max-width: 320px;
+    }
+
+    @media (min-width: 992px) {
+      .contato-btn-wrapper {
+        justify-content: flex-start;
+      }
+      .contato-btn-wrapper .btn {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-subtitle {
+        margin-bottom: 32px;
+      }
+      .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      .situacoes-grid, .provas-grid {
+        margin-bottom: 30px;
+      }
+      .prazo-wrapper {
+        gap: 20px;
+      }
+      .atuacao-img-badge {
+        left: 10px;
+        bottom: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+      .faq-trigger {
+        padding: 18px 0;
+      }
+      .faq-answer {
+        padding-bottom: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .situacao-card, .prova-card, .requisito-card {
+        padding: 24px 20px;
+      }
+    }
+
+    /* ==========================================================================
+       SCROLL REVEAL ANIMATIONS
+       ========================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.reveal-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+  <!-- [GTM-BODY-TRACKING] - Insira o código alternativo do Google Tag Manager (body) abaixo -->
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+  <!-- [GTM-BODY-TRACKING] - Fim do código GTM (body) -->
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+     class="whatsapp-floating cta-whats-track" 
+     id="btn-whats-float" 
+     data-action="click" 
+     data-category="whatsapp-lead"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.556 0 10.074-4.513 10.077-10.068.001-2.69-1.045-5.216-2.945-7.114C16.508 1.524 13.99 1.47 11.3 1.47c-5.559 0-10.078 4.513-10.082 10.069-.001 1.705.47 3.37 1.365 4.827l-.955 3.486 3.585-.941.012-.007-.008-.01zM17.476 14.4c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       DOBRA 1: HERO
+       ========================================================================== -->
+  <section class="hero section-dark" id="hero">
+    <div class="hero-lines-art"></div>
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="logo-container" style="margin-bottom: 30px; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <img src="logo.png" alt="Leonardo Ferreira Advocacia" class="logo-symbol-img" style="margin: 0 auto 10px;">
+          <div class="logo-text" style="text-align: center;">
+            L. A. FERREIRA
+            <span style="display: block;">Advocacia</span>
+          </div>
+        </div>
+        <div class="divider-fine"></div>
+        <h1 class="hero-title">Reconhecimento de Vínculo Empregatício</h1>
+        <p class="hero-subtitle">
+          Análise jurídica para quem trabalhou sem registro em carteira ou foi contratado como PJ, MEI, autônomo ou parceiro, mas atuava com rotina, ordens e pagamento — os elementos que caracterizam a relação de emprego.
+        </p>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+             class="btn btn-primary cta-whats-track" 
+             id="btn-whats-hero" 
+             data-action="click" 
+             data-category="whatsapp-lead"
+             target="_blank" 
+             rel="noopener noreferrer">
+            Analisar o Meu Caso
+          </a>
+          <p class="hero-microcopy">Atendimento direto com advogado, pelo WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 2: SITUAÇÕES (GRID DE 6 CARDS)
+       ========================================================================== -->
+  <section class="situacoes section-light" id="situacoes">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-badge">Situações Mais Comuns</span>
+        <h2 class="section-title">Quando o Vínculo de Emprego Pode Ser Reconhecido</h2>
+        <p class="section-subtitle">Formas de contratação que, na prática, funcionam como relação de emprego e podem ser discutidas na Justiça do Trabalho.</p>
+      </div>
+
+      <div class="situacoes-grid">
+        <!-- Card 1 -->
+        <div class="situacao-card reveal">
+          <div class="situacao-icon">
+            <!-- CTPS / Document Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="situacao-pill">Registro em CTPS</span>
+          <h3 class="situacao-title">Trabalho Sem Registro em Carteira</h3>
+          <p class="situacao-text">Situação em que o trabalhador exerce a função com rotina definida, cumprindo ordens e recebendo pagamento, sem que a empresa tenha efetuado a anotação na CTPS.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="situacao-card reveal reveal-delay-1">
+          <div class="situacao-icon">
+            <!-- PJ / Business Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M2.25 21h19.5m-18-18v18m16.5-18v18m-15-18h13.5a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5H3.75m0 0h13.5m-13.5 6h13.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="situacao-pill">Pejotização</span>
+          <h3 class="situacao-title">Contratação como PJ ou MEI</h3>
+          <p class="situacao-text">Casos em que o profissional é obrigado a abrir empresa e emitir nota fiscal para exercer atividade com subordinação, horário e metas determinados pelo contratante.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="situacao-card reveal reveal-delay-2">
+          <div class="situacao-icon">
+            <!-- Contract Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M19.5 8.25l-7.5 7.5-3-3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 3h10.5A1.5 1.5 0 0121 4.5v15a1.5 1.5 0 01-1.5 1.5H4.5A1.5 1.5 0 013 19.5V8.25L9 3z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="situacao-pill">Contrato de Serviço</span>
+          <h3 class="situacao-title">Registro como Autônomo ou Prestador</h3>
+          <p class="situacao-text">Contratos de prestação de serviços firmados com trabalhadores que atuam de forma contínua, exclusiva e integrada à rotina da empresa, sem autonomia real sobre o próprio trabalho.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="situacao-card reveal">
+          <div class="situacao-icon">
+            <!-- Fraud / Scales Warning Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="situacao-pill">Contrato Fraudulento</span>
+          <h3 class="situacao-title">Contrato de Parceria e Cooperativa</h3>
+          <p class="situacao-text">Parcerias em salões e barbearias e contratos por meio de cooperativas ou empresas interpostas que, na prática, encobrem a existência de subordinação direta.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="situacao-card reveal reveal-delay-1">
+          <div class="situacao-icon">
+            <!-- Academic/Internship Warning Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.231-4.41c-.048-2.113-.213-4.228-.493-6.347M3 9l9-6 9 6-9 6-9-6zm9 3v8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="situacao-pill">Estágio Irregular</span>
+          <h3 class="situacao-title">Estágio Sem Finalidade Educacional</h3>
+          <p class="situacao-text">Contratos de estágio em que o estudante exerce as mesmas funções de um empregado, sem supervisão acadêmica ou relação entre a atividade e o curso.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="situacao-card reveal reveal-delay-2">
+          <div class="situacao-icon">
+            <!-- Road/Map Route Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M9 6.75h1.5m-1.5 3h.008v.008H9V9.75zm.563 2.25l-.75 2.25H6.75l.75-2.25h2.063zm0 0l.75-2.25H12l-.75 2.25H9.563zm1.187-3.563l.75-2.25h1.5l-.75 2.25H10.75zM12 2.25V5.25M6.75 21.75V18.75m10.5 3v-3M3.75 12h16.5M12 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm9 0a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="situacao-pill">Subordinação</span>
+          <h3 class="situacao-title">Rotina Controlada em Serviços Externos</h3>
+          <p class="situacao-text">Motoristas, entregadores, representantes e profissionais externos submetidos a escalas, metas, roteiros ou fiscalização contínua sobre a forma de execução do trabalho.</p>
+        </div>
+      </div>
+
+      <div class="situacoes-cta-wrapper reveal">
+        <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+           class="btn btn-primary cta-whats-track" 
+           id="btn-whats-situacoes" 
+           data-action="click" 
+           data-category="whatsapp-lead"
+           target="_blank" 
+           rel="noopener noreferrer">
+          Analisar o Meu Caso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 3: BLOCO ESCURO COM FOTO
+       ========================================================================== -->
+  <section class="atuacao section-dark" id="atuacao">
+    <div class="container atuacao-grid">
+      <div class="atuacao-img-container reveal">
+        <div class="atuacao-img-frame">
+          <div class="atuacao-img-wrapper">
+            <img src="lawyer_portrait.png" alt="Dr. Leonardo A. Ferreira" class="atuacao-img" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400';">
+          </div>
+          <div class="atuacao-img-badge">Leonardo Ferreira</div>
+        </div>
+      </div>
+      
+      <div class="atuacao-content reveal">
+        <span class="section-badge" style="text-align: left;">Escritório</span>
+        <h2 class="section-title" style="text-align: left; margin-left: 0;">Atuação Dedicada ao Direito do Trabalho</h2>
+        <div class="divider-fine" style="margin-left: 0;"></div>
+        <p class="atuacao-text-p">
+          A trajetória do escritório Leonardo A. Ferreira Advocacia é pautada pela dedicação exclusiva à defesa de direitos no ambiente laboral, incluindo as ações que discutem a existência da relação de emprego.
+        </p>
+        <p class="atuacao-text-p">
+          Nos casos de reconhecimento de vínculo, o trabalho começa pela reconstrução dos fatos: como era a rotina, quem determinava horários e tarefas, de que forma os pagamentos eram feitos e quais registros restaram desse período. É essa leitura que define se há fundamento para a ação e qual estratégia adotar.
+        </p>
+        <p class="atuacao-text-p">
+          A atuação é guiada pela transparência, pela competência técnica e pelo sigilo profissional, com o trabalhador informado sobre cada etapa e sobre os caminhos possíveis para a sua situação.
+        </p>
+        <div style="margin-top: 24px;">
+          <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+             class="btn btn-primary cta-whats-track" 
+             id="btn-whats-atuacao" 
+             data-action="click" 
+             data-category="whatsapp-lead"
+             target="_blank" 
+             rel="noopener noreferrer">
+            Analisar o Meu Caso
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 4: OS QUATRO REQUISITOS (BLOCO NUMERADO)
+       ========================================================================== -->
+  <section class="requisitos section-white" id="requisitos">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-badge">Como a Lei Define</span>
+        <h2 class="section-title">Os Quatro Elementos da Relação de Emprego</h2>
+        <p class="section-subtitle">No Direito do Trabalho vale o princípio da primazia da realidade: o que valeu foi o que aconteceu no dia a dia, não o nome dado ao contrato. Estes são os elementos analisados pela Justiça do Trabalho.</p>
+      </div>
+
+      <div class="requisitos-grid">
+        <!-- Requisito 1 -->
+        <div class="requisito-card reveal">
+          <span class="requisito-number">01</span>
+          <h3 class="requisito-title">Pessoalidade</h3>
+          <p class="requisito-text">O trabalho era executado por você. Não podia ser transferido a outra pessoa no seu lugar, o que afasta a ideia de prestação de serviço substituível.</p>
+        </div>
+
+        <!-- Requisito 2 -->
+        <div class="requisito-card reveal reveal-delay-1">
+          <span class="requisito-number">02</span>
+          <h3 class="requisito-title">Habitualidade</h3>
+          <p class="requisito-text">A atividade era rotineira, com dias e frequência definidos, integrada à operação da empresa — e não um serviço eventual ou esporádico.</p>
+        </div>
+
+        <!-- Requisito 3 -->
+        <div class="requisito-card reveal reveal-delay-2">
+          <span class="requisito-number">03</span>
+          <h3 class="requisito-title">Onerosidade</h3>
+          <p class="requisito-text">Havia contraprestação pelo trabalho, em qualquer formato: salário, diária, comissão, nota fiscal, depósito ou transferência.</p>
+        </div>
+
+        <!-- Requisito 4 -->
+        <div class="requisito-card reveal reveal-delay-3">
+          <span class="requisito-number">04</span>
+          <h3 class="requisito-title">Subordinação</h3>
+          <p class="requisito-text">Você recebia ordens, cumpria horário, seguia escalas, metas ou regras determinadas por quem contratou, sem autonomia sobre a forma de trabalhar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 5: PROVAS
+       ========================================================================== -->
+  <section class="provas section-light" id="provas">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-badge">Meios de Prova</span>
+        <h2 class="section-title">Como o Vínculo é Provado</h2>
+        <p class="section-subtitle">A ausência de carteira assinada não significa ausência de provas. Registros comuns da rotina costumam demonstrar a relação de trabalho.</p>
+      </div>
+
+      <div class="provas-grid">
+        <!-- Card 1 -->
+        <div class="prova-card reveal">
+          <div class="prova-icon-box">
+            <!-- Messages / Chat Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v5.03z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="prova-title">Registros da Rotina</h3>
+          <p class="prova-text">Conversas de WhatsApp com ordens, escalas e cobranças, e-mails, grupos de equipe, acessos a sistemas internos, fotos, uniforme e crachá.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="prova-card reveal reveal-delay-1">
+          <div class="prova-icon-box">
+            <!-- Banknotes / Payment Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.389 1.453-1.143V6.108c0-.754-.726-1.34-1.453-1.143a60.07 60.07 0 01-15.797 2.101m0 11.686v-11.686m0 11.686a60.108 60.108 0 0015.797-2.101M2.25 7.065a60.108 60.108 0 0115.797-2.101m0 0a60.02 60.02 0 013.703-1c.727-.197 1.45-.383 1.45.372v10.375c0 .755-.723 1.34-1.45 1.143a60.104 60.104 0 01-3.703-1m0-11.686v11.686M9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="prova-title">Comprovantes de Pagamento</h3>
+          <p class="prova-text">Transferências, PIX, depósitos, recibos e notas fiscais emitidas ao contratante, que demonstram a contraprestação e a continuidade do trabalho.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="prova-card reveal reveal-delay-2">
+          <div class="prova-icon-box">
+            <!-- Users / Witnesses Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="prova-title">Testemunhas</h3>
+          <p class="prova-text">Colegas, fornecedores e clientes que acompanhavam a rotina e podem confirmar o horário, as funções exercidas e quem dava as ordens.</p>
+        </div>
+      </div>
+
+      <div class="provas-alert reveal">
+        <div class="provas-alert-title">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Recomendação Importante
+        </div>
+        <p class="provas-alert-text">Antes de qualquer medida, o mais importante é preservar esse material. A análise dos documentos indica o que já é suficiente e o que ainda precisa ser reunido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 6: FAIXA DE PRAZO
+       ========================================================================== -->
+  <section class="prazo" id="prazo">
+    <div class="container">
+      <div class="prazo-wrapper reveal">
+        <div class="prazo-content">
+          <span class="prazo-title-badge">Atenção ao Prazo Legal</span>
+          <p class="prazo-text">
+            O prazo para ingressar com a ação é de <strong>dois anos após o fim do contrato</strong>, e os valores podem ser cobrados em relação aos últimos cinco anos. Quanto mais cedo a situação é analisada, mais preservadas ficam as provas e os direitos do período.
+          </p>
+        </div>
+        <div class="prazo-action">
+          <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+             class="btn btn-primary cta-whats-track" 
+             id="btn-whats-prazo" 
+             data-action="click" 
+             data-category="whatsapp-lead"
+             target="_blank" 
+             rel="noopener noreferrer">
+            Analisar o Meu Caso
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 7: FAQ
+       ========================================================================== -->
+  <section class="faq section-white" id="faq">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-badge">Dúvidas Frequentes</span>
+        <h2 class="section-title">Esclarecimentos Sobre o Reconhecimento de Vínculo</h2>
+        <p class="section-subtitle">Respostas diretas para as dúvidas mais frequentes de quem trabalhou sem registro em carteira.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-1">
+            <span class="faq-question">1. Trabalhei sem carteira assinada. Ainda posso pedir o reconhecimento do vínculo?</span>
+            <span class="faq-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16m-8-8h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-content" id="faq-ans-1">
+            <div class="faq-answer">
+              Sim. A falta de registro é justamente o objeto da ação. O que se analisa são os fatos do período trabalhado: se havia pessoalidade, habitualidade, pagamento e subordinação. Comprovados esses elements, o vínculo pode ser reconhecido e anotado na CTPS.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2">
+            <span class="faq-question">2. Fui contratado como PJ, MEI ou autônomo. Isso impede o reconhecimento?</span>
+            <span class="faq-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16m-8-8h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-content" id="faq-ans-2">
+            <div class="faq-answer">
+              Não impede. Pelo princípio da primazia da realidade, a forma da contratação não prevalece sobre a rotina efetiva. Havendo subordinação, horário e integração à atividade da empresa, o vínculo pode ser reconhecido mesmo com contrato assinado e notas fiscais emitidas.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3">
+            <span class="faq-question">3. Não tenho contrato nem holerite. Como provo que trabalhei ali?</span>
+            <span class="faq-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16m-8-8h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-content" id="faq-ans-3">
+            <div class="faq-answer">
+              Mensagens, escalas, comprovantes de pagamento, e-mails, fotos, uniforme, acessos a sistemas e testemunhas são meios de prova admitidos na Justiça do Trabalho. O primeiro passo é reunir e preservar esse material para análise.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4">
+            <span class="faq-question">4. Qual é o prazo para entrar com a ação?</span>
+            <span class="faq-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16m-8-8h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-content" id="faq-ans-4">
+            <div class="faq-answer">
+              Em regra, dois anos contados do fim do contrato de trabalho, sendo possível cobrar valores referentes aos últimos cinco anos. Por isso a orientação é buscar a análise o quanto antes.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-5">
+            <span class="faq-question">5. O que muda na prática se o vínculo for reconhecido?</span>
+            <span class="faq-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16m-8-8h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-content" id="faq-ans-5">
+            <div class="faq-answer">
+              O período passa a constar na CTPS e os direitos correspondentes àquele tempo podem ser exigidos, como FGTS, férias com um terço, décimo terceiro, verbas rescisórias, adicionais devidos e o recolhimento das contribuições ao INSS — o que reflete na aposentadoria. O que é efetivamente devido depende dos fatos e das provas de cada caso.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-cta-wrapper reveal">
+        <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+           class="btn btn-primary cta-whats-track" 
+           id="btn-whats-faq" 
+           data-action="click" 
+           data-category="whatsapp-lead"
+           target="_blank" 
+           rel="noopener noreferrer">
+          Analisar o Meu Caso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DOBRA 8: CONTATO & MAPS
+       ========================================================================== -->
+  <section class="contato section-dark" id="contato">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-badge">Atendimento</span>
+        <h2 class="section-title">Fale Sobre o Seu Caso</h2>
+        <p class="section-subtitle">Reúna o que tiver — mensagens, comprovantes de pagamento e nomes de colegas — e converse com um advogado sobre o reconhecimento do seu vínculo de emprego.</p>
+      </div>
+
+      <div class="contato-grid">
+        <!-- Column 1: Map Integration -->
+        <div class="map-wrapper reveal">
+          <!-- Grayscale Google Maps iframe lazy loaded -->
+          <iframe 
+            class="map-frame" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.8643350259837!2d-48.65345719999999!3d-27.026367300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df344f6f4d3893%3A0xe54d4a8ee1b75fa5!2sR.%20Dr.%20Ac%C3%A1cio%20Bernardes%2C%20160%20-%20Centro%2C%20Cambori%C3%BA%20-%20SC%2C%2088340-237!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Localização Leonardo A. Ferreira Advocacia">
+          </iframe>
+        </div>
+
+        <!-- Column 2: Info & Final CTA -->
+        <div class="contato-info reveal reveal-delay-1">
+          <div class="contato-channels">
+            <!-- Channel Item 1 -->
+            <div class="contato-channel-item">
+              <div class="channel-icon">
+                <!-- Location Icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h4>Endereço</h4>
+                <a href="https://maps.google.com/?q=Rua+Dr.+Acacio+Bernardes,+160,+Centro,+Camboriu+-+SC" target="_blank" rel="noopener noreferrer" class="channel-link">
+                  Rua Dr. Acácio Bernardes, nº 160, Centro, Camboriú – SC
+                </a>
+              </div>
+            </div>
+
+            <!-- Channel Item 2 -->
+            <div class="contato-channel-item">
+              <div class="channel-icon">
+                <!-- Phone Icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.557-5.118-3.85-6.675-6.675l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h4>Telefone</h4>
+                <a href="tel:+5547988797671" class="channel-link">(47) 98879-7671</a>
+              </div>
+            </div>
+
+            <!-- Channel Item 3 -->
+            <div class="contato-channel-item">
+              <div class="channel-icon">
+                <!-- Email Icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h4>E-mail</h4>
+                <a href="mailto:leonardo@lafadvocacia.com.br" class="channel-link">leonardo@lafadvocacia.com.br</a>
+              </div>
+            </div>
+
+            <!-- Channel Item 4 -->
+            <div class="contato-channel-item">
+              <div class="channel-icon">
+                <!-- Instagram / Globe Icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <h4>Instagram</h4>
+                <a href="https://instagram.com/lafadvocacia" target="_blank" rel="noopener noreferrer" class="channel-link">@lafadvocacia</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-btn-wrapper">
+            <a href="https://api.whatsapp.com/send?phone=5547988797671&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20sobre%20reconhecimento%20de%20v%C3%ADnculo%20empregat%C3%ADcio." 
+               class="btn btn-primary cta-whats-track" 
+               id="btn-whats-contato" 
+               data-action="click" 
+               data-category="whatsapp-lead"
+               target="_blank" 
+               rel="noopener noreferrer">
+              Iniciar Atendimento via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           FOOTER
+           ========================================================================== -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Leonardo Ferreira Advocacia" class="footer-logo-img">
+            <div class="footer-logo-text">LEONARDO A. FERREIRA ADVOCACIA</div>
+          </div>
+          
+          <div class="footer-meta">
+            Leonardo A. Ferreira Advocacia — OAB/SC
+            <br>
+            &copy; 2026 Leonardo A. Ferreira Advocacia. Todos os direitos reservados.
+          </div>
+
+          <div class="footer-links">
+            <a href="#" onclick="alert('Políticas de Privacidade: O escritório zela pelo sigilo absoluto e proteção aos dados de seus consulentes de acordo com a LGPD.'); return false;">Políticas de Privacidade</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      /* ==========================================================================
+         FAQ ACCORDION TRANSITION HANDLER
+         ========================================================================== */
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        const content = item.querySelector('.faq-content');
+
+        trigger.addEventListener('click', () => {
+          const isOpen = item.classList.contains('active');
+
+          // Close all FAQ items
+          faqItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+            otherItem.querySelector('.faq-content').style.height = '0px';
+          });
+
+          // Toggle the clicked one
+          if (!isOpen) {
+            item.classList.add('active');
+            trigger.setAttribute('aria-expanded', 'true');
+            // Set dynamic scrollHeight for smooth transition height
+            content.style.height = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+      /* ==========================================================================
+         SCROLL REVEAL INTERSECTION OBSERVER
+         ========================================================================== */
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+            // Once revealed, no need to keep observing this element
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null, // Viewport
+        threshold: 0.1, // Trigger when 10% is visible
+        rootMargin: '0px 0px -50px 0px' // Margins to trigger slightly before coming into view
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+      
+    });
+  </script>
+</body>
+</html>
